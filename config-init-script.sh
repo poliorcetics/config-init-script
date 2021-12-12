@@ -1,6 +1,6 @@
 # See README.md for source
 mkdir -p "$HOME/.config/"
-git clone --bare raw.githubusercontent.com/poliorcetics/bare-config.git "$HOME/.config/bare-config.git"
+git clone --bare git@github.com/poliorcetics/bare-config "$HOME/.config/bare-config.git"
 function config {
    git --git-dir="$HOME/.config/bare-config.git" --work-tree="$HOME" $@
 }
